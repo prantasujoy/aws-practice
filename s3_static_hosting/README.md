@@ -14,7 +14,8 @@ An static website hosted on S3,distributed CDN using cloudfront,R53 for custom d
 
 ## Architecture
 
-![Local Image](/home/sujoy/Pictures/merlin.jpg)
+![Alt architecture](https://app.eraser.io/workspace/9x5PL6zLggq279eisM2S?origin=share&elements=YRiIE6_MOP6M_82I5bDWtA)
+
 
 
 
