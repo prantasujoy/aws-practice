@@ -38,7 +38,7 @@ creating connection between one public and one private vpc using vpc peering
     • allow SSH from anywhere in Security group
     • allow ICMP All-anywhere in security group
     
-## Step 4:Testing coonection:
+## Step 4:Testing connection:
     • connect to EC2-01 using ssh from local machine or use ec2 instance connect
     • ping to EC2-02-private using its private IP,if everything is ok, it will ping
     • to SSH into EC2-02,need to copy the key for Ec2-02 inside Ec2-01, and then ssh 
