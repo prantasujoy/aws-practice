@@ -14,7 +14,7 @@ An static website hosted on S3,distributed CDN using cloudfront,R53 for custom d
 
 ## Architecture
 
-![Alt architecture](https://github.com/prantasujoy/aws-practice/blob/main/s3_static_hosting/s3_static_hosting.png?raw=true)
+![Alt architecture](https://github.com/prantasujoy/aws-practice/blob/main/s3_static_hosting/s3_static_svg.jpg?raw=true)
 
 
 
