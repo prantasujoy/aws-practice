@@ -23,7 +23,7 @@ An static website hosted on S3,distributed CDN using cloudfront,R53 for custom d
 
 ## step 2:Create S3 Bucket
     1.create a s3 bucket.(bucket name should match the website name we will use later)
-    2.enable public access,add a [bucket policy](www.google.com) to make it public 
+    2.enable public access,add the bucket policy to make it public 
     3.use bucket name something like this (<bucketname>.<domain name>)
     4.upload files: all files from the build directory (except  static folder)
     5.upload folder: upload static folder from build directory
@@ -65,7 +65,7 @@ An static website hosted on S3,distributed CDN using cloudfront,R53 for custom d
     • go to the website, now it will serve using cloudfront and website it secured now, as it is creating certificate
 ## step 6:CI/CD from github:
     • create a github repo 
-    • add a new buildspec.yml file in the root directory of the app (buildspec.yml link)
+    • add a new buildspec.yml file in the root directory of the app 
     • change the values in the  buildspec.yml file as needed
     • push the code to the github repo
 
@@ -79,7 +79,7 @@ An static website hosted on S3,distributed CDN using cloudfront,R53 for custom d
     • operating syatem=>ubuntu
     • runtime=>standard
     • let it create a new service role
-    • build details =>service role =>edit policy =>policy url
+    • build details =>service role =>edit policy =>[policy url](https://www.openai.com)
     • empty the bucket, puh updated code to github, it will populate the s3 bucket(with build directory)
     • go to codebuild, if every thing is ok, it will show success 
     
