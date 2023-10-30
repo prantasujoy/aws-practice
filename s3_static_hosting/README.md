@@ -23,7 +23,7 @@ An static website hosted on S3,distributed CDN using cloudfront,R53 for custom d
 
 ## step 2:Create S3 Bucket
     1.create a s3 bucket.(bucket name should match the website name we will use later)
-    2.enable public access,add a [bucket policy](./bucket_policy.txt) to make it public 
+    2.enable public access,add a [bucket policy](www.google.com) to make it public 
     3.use bucket name something like this (<bucketname>.<domain name>)
     4.upload files: all files from the build directory (except  static folder)
     5.upload folder: upload static folder from build directory
