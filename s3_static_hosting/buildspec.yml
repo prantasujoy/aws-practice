@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo "Installing dependencies..."
+      - npm install 
+
+  build:
+    commands:
+      - echo "Building React app..."
+      - npm run build
+
+  post_build:
+    commands:
+      - echo "Copying build  to S3..."
+      - aws s3 sync build/ bucket_name --delete
+      - echo "invalidating cache..."
+      - aws cloudfront create-invalidation --distribution-id <<replace with cloudfront distributuion id>> --paths "/*"
