@@ -79,7 +79,7 @@ An static website hosted on S3,distributed CDN using cloudfront,R53 for custom d
     • operating syatem=>ubuntu
     • runtime=>standard
     • let it create a new service role
-    • build details =>service role =>edit policy =>[policy url](https://www.openai.com)
+    • build details =>service role =>edit policy =>add new block inside statement to access s3 and cloudfront
     • empty the bucket, puh updated code to github, it will populate the s3 bucket(with build directory)
     • go to codebuild, if every thing is ok, it will show success 
     
