@@ -1,0 +1,20 @@
+
+Command for /etc/ipsec.d/aws-vpn.conf
+conn Tunnel1
+        authby=secret
+        auto=start
+        left=%defaultroute
+        leftid=Customer end Gateway VPN public IP
+        right=AWS Virtual private gateway ID- public IP
+        type=tunnel
+        ikelifetime=8h
+        keylife=1h
+        phase2alg=aes128-sha1;modp1024
+        ike=aes128-sha1;modp1024
+        keyingtries=%forever
+        keyexchange=ike
+        leftsubnet=Customer end VPN CIDR
+        rightsubnet=AWS end VPN CIDR
+        dpddelay=10
+        dpdtimeout=30
+        dpdaction=restart_by_peer
